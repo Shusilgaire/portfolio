@@ -1,0 +1,72 @@
+.education__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    size: 2rem;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .education__container .education_temple {
+    background: var(--color-bg-variant);
+    padding: 2.4rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+  }
+  
+  .education__container > div:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+  }
+  
+  .education__container > div h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--color-primary);
+  }
+  
+  .education__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .education__details {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .education__details-icon {
+    margin-top: 6px;
+  }
+  
+  /*==============Media Queries- Medium Devices===========*/
+  @media screen and (max-width: 1024px) {
+    .education__container {
+      grid-template-columns: 1fr;
+    }
+  
+    .education__container > div {
+      width: 80%;
+      padding: 2 rem;
+      margin: 0 auto;
+    }
+  
+    .education__content {
+      padding: 1rem;
+    }
+  }
+  
+  /*==============Media Queries- Small Devices===========*/
+  @media screen and (max-width: 600px) {
+    .education__container {
+      gap: 1rem;
+    }
+  
+    .education__container > div {
+      width: 100%;
+      padding: 2rem 1rem;
+    }
+  }
